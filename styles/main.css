@@ -1,0 +1,103 @@
+/* Text styles */
+/* Headings styling */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Arvo,'Helvetica', sans-serif; /* Setting all headings text to the Arvo web font, and setting Helvetica font as the fallback option */
+}
+/* Paragraph & unordered list styling */
+p, ul, ol {
+  font-family: Merriweather,'Georgia', serif; /* Setting all paragraph text to the Merriweather web font, and setting Georgia font as the fallback option */
+}
+/* Class to be used for centering text when appropriate */
+.center-text {
+  text-align: center;
+}
+
+/* Navigation Menu */
+/* Setting the background color for the navigation menu */
+.navigation-menu {
+  background-color: #c44d4d; /* Setting the color to Geranium */
+  overflow: hidden;  /* Clips background area to fit floated navigation elements */
+}
+/* Styling the navigation items */
+.navigation-menu a {
+  float: left; /* Aligning the nav items to the left of the page */
+  color: #ffffff; /* Setting the default text color to white */
+  text-align: center; /* Center aligning each nav list item */
+  padding: 16px 32px; /* Setting vertical padding of each nav item to 16px and horizontal padding of each nav item to 32px */
+  text-decoration: none; /* Removing the default underline under every nav item  */
+  font-size: 20px;
+}
+/* Changing the color of the each nav item when hovered */
+.navigation-menu a:hover {
+  background-color: #f25c5c; /* Setting the background color of the hovered item to light Geranium */
+  color: #ffffff; /* Setting the text color to white */
+}
+/* Setting the color of the active nav item */
+.navigation-menu a.active {
+  background-color: #913939; /* Setting the color to Dark Geranium */
+  color: #ffffff; /* Setting the text color to white */
+}
+
+
+/* Spacing for different website sections */
+/* Adding spacing for divisions of text sections */
+body {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.top-padding {
+  padding-top: 25px;
+}
+/* Adding 2 columns for the image gallery */
+.row {
+display: flex;
+}
+.column {
+flex: 50%;
+}
+
+
+/* Image formatting */
+/* Sizing for banner images */
+.banner-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-top: 10px;
+}
+/* Sizing for smaller images */
+.smaller-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  padding-top: 10px;
+}
+/* Sizing for profile images */
+.profile-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 240px;
+  padding-top: 10px;
+}
+
+
+/* Styling the video section */
+iframe.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Setting footer styles */
+.footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #c44d4d;
+  color: #ffffff;
+  margin-top: 25px;
+}
