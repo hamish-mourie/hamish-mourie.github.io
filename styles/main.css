@@ -92,12 +92,21 @@ p, ul, ol {
 
 /* Spacing for different website sections */
 /* Adding spacing for divisions of text sections */
-body {
-  padding-left: 10%;
-  padding-right: 10%;
-}
+
 .top-padding {
   padding-top: 25px;
+}
+
+body {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.body-content {
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 /* Sizing for smaller images */
@@ -115,5 +124,41 @@ body {
   padding: 3px;
   background-color: #c44d4d;
   color: #ffffff;
-  margin-top: 25px;
+  margin-top: auto;
+}
+
+
+.background-image {
+  z-index: -1;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+/* Centered text */
+.container-center {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4.5vw;
+  -webkit-text-stroke: 0.08vw black;
+}
+
+@media only screen and (max-width: 800px) {
+  .container-center {
+    font-size: 5.5vw;
+  }
+}
+
+.container-image {
+  position: absolute;
+  top:20%;
+  left:50%;
 }
