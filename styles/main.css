@@ -4,7 +4,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Arvo,'Helvetica', sans-serif; /* Setting all headings text to the Arvo web font, and setting Helvetica font as the fallback option */
 }
 /* Paragraph & unordered list styling */
-p, ul, ol {
+a, p, ul, ol {
   font-family: Merriweather,'Georgia', serif; /* Setting all paragraph text to the Merriweather web font, and setting Georgia font as the fallback option */
 }
 /* Class to be used for centering text when appropriate */
@@ -50,7 +50,7 @@ p, ul, ol {
   color: white;
   padding: 16px 32px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
+  font-family: Merriweather,'Georgia', serif; /* Important for vertical align on mobile phones */
   margin: 0; /* Important for vertical align on mobile phones */
 }
 /* Add a red background color to navbar links on hover */
@@ -109,6 +109,17 @@ body {
   padding-right: 10%;
 }
 
+.the-best-background {
+  background-image: url("../images/the-best-background.jpg");
+  background-repeat: repeat;
+}
+
+.white-bg {
+  background: rgba(255, 255, 255, 0.85);
+  background-origin:content-box;
+  padding: 2%;
+}
+
 /* Sizing for smaller images */
 .smaller-image {
   display: block;
@@ -119,7 +130,7 @@ body {
 }
 
 /* Setting footer styles */
-.footer {
+.footers {
   text-align: center;
   padding: 3px;
   background-color: #c44d4d;
@@ -161,4 +172,64 @@ body {
   position: absolute;
   top:20%;
   left:50%;
+}
+
+#test-id {
+  color:blue;
+}
+
+.test-class {
+  color:red;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.box-shader-0 {
+  background: rgba(255,255,255, 0.8);
+  background-origin:content-box;
+  padding: 1%;
+  margin: 5%;
+  border-radius: 25px;
+}
+
+.box-shader-1 {
+  background: rgba(255,179,186, 0.8);
+  background-origin:content-box;
+  margin: 2%;
+  border-radius: 25px;
+}
+
+.box-shader-2 {
+  background: rgba(255,223,186, 0.8);
+  background-origin:content-box;
+  margin: 2%;
+  border-radius: 25px;
+}
+
+.box-shader-3 {
+  background: rgba(255,255,186, 0.8);
+  background-origin:content-box;
+  margin: 2%;
+  border-radius: 25px;
+}
+
+.box-shader-4 {
+  background: rgba(186,255,201, 0.8);
+  background-origin:content-box;
+  margin: 2%;
+  border-radius: 25px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

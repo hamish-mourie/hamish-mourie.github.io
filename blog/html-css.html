@@ -24,8 +24,8 @@
   <body>
     
     <!-- Navigation Menu -->
-    <div class="navigation-menu"> <!-- Using a specific styles class for the navigation menu -->
-      <a class="active" href="../index.html">Home</a> <!-- Using a different styles class for the currently active page -->
+    <div id="main-nav" class="navigation-menu"> <!-- Using a specific styles class for the navigation menu -->
+      <a href="../index.html">Home</a> <!-- Using a different styles class for the currently active page -->
 
       <div class="dropdown">
         <button class="dropbtn">Core Blogs
@@ -34,7 +34,6 @@
         <div class="dropdown-content">
           <a href="#">Blog 1</a>
           <a href="#">Blog 2</a>
-          <a href="#">Blog 3</a>
         </div>
       </div>
 
@@ -43,17 +42,74 @@
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-content">
-          <a href="#">Using Classes vs. IDs</a>
-          <a href="#">Article 2</a>
-          <a href="#">Article 3</a>
+          <a class="active" href="#">Using Classes vs. IDs</a>
         </div>
       </div>
     </div>
     
-    <h1>Test</h1>
+    <div class="body-content the-best-background">
+
+      <div class="white-bg">
+        <div class="column box-shader-0">
+          <h1 class="center-text">Using Classes vs. IDs</h1>
+          <p class="center-text">Classes are referenced in CSS by putting a dot in front of property names. Example: .my-class{ }</p>
+          <p class="center-text">IDs are referenced in CSS by putting a hash sign in front of a property name. Example: #my-id{ }</p>
+        </div>
+        <div class="row">
+          <div class="column box-shader-1"> 
+            <h3 class="center-text">Usage</h3>
+            <p>It is best practice to only use IDs if you want a style to apply to one element on the web page, and to use classes if you want a style to apply to multiple elements.</p>
+            <ul>
+              <li>IDs are not reusable, whereas classes are reusable.</li>
+              <li>Each HTML &lt;element&gt; can have only one ID, but can have multiple classes.</li>
+              <li>Each HTML page can have only one &lt;element&gt; with a specific ID, whereas a specific class can be used in multiple elements.</li>
+            </ul>
+          </div>
+
+          <div class="column box-shader-2">
+            <h3 class="center-text">Using JavaScript</h3>
+            <p>The "getElementById" function is commonly used in JavaScript.</p>
+            <p>By assigning an ID to a specific element this allows JavaScript to interact with the element in question through the use of this function.</p>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="column box-shader-3"> 
+            <h3 class="center-text">Using IDs for Internal Links</h3>
+            <p>If you want to take users to a location on the current page you can do so by setting the href property in an anchor tag to an element's ID. When clicked the browser will automatically scroll the page to show that element.</p>
+            
+            <p>HTML for the footer element:</p>
+            <img src="../images/footer element.jpg">
+            <p>HTML for the anchor link element:</p>
+            <img src="../images/footer-href.jpg">
+
+            <p>Working Example:</p>
+            <a href="#main-nav">Go to top</a>
+            <p></p>
+            <a href="#main-footer">Go to footer</a>
+          </div>
+
+          <div class="column box-shader-4">
+            <h3 class="center-text">A Note on Specificity</h3>
+            <p>Specificity refers to the means by which browsers decide which CSS property values are the most relevant to an element, and which should be applied.</p>
+            <p>IDs have higher specificity than classes, so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.</p>
+            <p>For Example:</p>
+            <p>CSS:</p>
+            <img src="../images/css1.jpg">
+            <p>HTML:</p>
+            <img src="../images/html1.jpg">
+            <p>Output:</p>
+            <p id="test-id" class="test-class">Sample text</p>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
 
     <!-- Footer section -->
-    <footer class="footer">
+    <footer id="main-footer" class="footers">
       <p>Hamish Mourie | 2022</p>
     </footer>
 
