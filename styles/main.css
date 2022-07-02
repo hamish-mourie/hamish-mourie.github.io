@@ -166,6 +166,9 @@ body {
   .container-center {
     font-size: 5.5vw;
   }
+  .row {
+    display:inline-block !important; 
+  }
 }
 
 .container-image {
