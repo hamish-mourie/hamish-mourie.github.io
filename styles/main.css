@@ -12,6 +12,13 @@ a, p, ul, ol {
   text-align: center;
 }
 
+.center-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* Navigation Menu */
 /* Setting the background color for the navigation menu */
 .navigation-menu {
