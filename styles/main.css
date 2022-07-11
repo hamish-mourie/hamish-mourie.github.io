@@ -145,33 +145,35 @@ body {
   margin-top: auto;
 }
 
-
-.background-image {
-  z-index: -1;
-  width: 100%;
-  height: auto;
-  display: block;
+.full-height {
+  height: 100%;
 }
 
-.container {
+.new-background-image {
+  background-image: url(../images/kapiti-resized.jpg);
+  height: 88%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
-  text-align: center;
-  color: white;
 }
 
-/* Centered text */
-.container-center {
+.hero-text {
+  text-align: center;
+  vertical-align: top;
   position: absolute;
-  top: 20%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4vw;
-  -webkit-text-stroke: 0.08vw black;
+  color: #d5dae0;
+  font-size: 2vw;
+  -webkit-text-stroke: 0.01vw black;
+  color: white
 }
 
 @media only screen and (max-width: 800px) {
-  .container-center {
-    font-size: 5.5vw;
+  .hero-text {
+    font-size: 3vw;
   }
   .row {
     display:inline-block !important; 
