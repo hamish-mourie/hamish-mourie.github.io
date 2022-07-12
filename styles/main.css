@@ -12,6 +12,10 @@ a, p, ul, ol {
   text-align: center;
 }
 
+.bold-text {
+  font-weight: bold;
+}
+
 .center-image {
   display: block;
   margin-left: auto;
