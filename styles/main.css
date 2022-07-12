@@ -185,6 +185,12 @@ body {
   .box-default {
     border-radius: 3px !important;
   }
+  .navigation-menu a {
+    padding: 16px 16px; 
+  }
+  .dropdown .dropbtn {
+    padding: 16px 16px; 
+  }
 }
 
 .container-image {
