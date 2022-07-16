@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Titling the webpage -->
+    <title>Problem Solving</title>
+
+    <!-- Linking to the favicon -->
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+
+    <!-- Linking to the CSS stylesheet -->
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+
+    <!-- Linking to 2 web fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+    
+  </head>
+
+  <body>
+    
+    <!-- Navigation Menu -->
+    <div id="main-nav" class="navigation-menu"> <!-- Using a specific styles class for the navigation menu -->
+      <a href="../index.html">Home</a> <!-- Using a different styles class for the currently active page -->
+
+      <div class="dropdown">
+        <button class="dropbtn">Core Blogs
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./identity-values.html">Identity & Values</a>
+          <a href="./learning-plan.html">Learning Plan</a>
+          <a href="./emotional-intelligence.html">Emotional Intelligence</a>
+          <a href="./neuroplasticity.html">Neuroplasticity and Growth Mindset</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <button class="dropbtn">Technical Blogs
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="./html-css.html">Using Classes vs. IDs</a>
+          <a href="./javascript-dom.html">JavaScript & The DOM</a>
+          <a class="active" href="#">Problem Solving</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="body-content the-best-background">
+      <div class="white-bg">
+        <div class="column box-default box-shader-0">
+          <h1 class="center-text">Problem Solving</h1>
+        </div>
+        <div class="row">
+          <div class="column box-default box-shader-1"> 
+            <h3 class="center-text">Blocked on a Simple Problem</h3>
+            <p>
+              The simple problem was that a for loop was returning 'undefined' in the FizzBuzz Kata.
+            </p>
+            <p>
+              To solve this issue I used the rubber ducky method as a problem solving technique. By explaining the 2nd parameter of the for loop out loud I found that the loop was running one more time than intended. This occurred because the .length method returns a number which is 1 greater than the final array index number (as array indexes are counted from 0).
+            </p>
+            <p>
+              Throughout the process of solving this problem I was initially confused because the error message which was provided didn't help much.
+              After finding the issue it felt good to know that by looping one less time the issue would be fixed, as it was a simple resolution to implement.
+            </p>
+            <p>
+              I learnt that by sequentially going through the code from start to finish most issues can be found.
+            </p>
+          </div>
+          <div class="column box-default box-shader-2"> 
+            <h3 class="center-text">Elegant Problem Solving</h3>
+            <p>
+              The FizzBuzz problem was solved elegantly by ordering the number checks in an order so which each "If" check had few conditions. For example the check for if a number was divisible by both 3 AND 5 was done first so that the later "else if" statements only had to check for if one number was divisible/indivisible.
+            </p>
+            <p>
+              The problem solving technique used was Googling. Before even knowing about the FizzBuzz challenge being a part of the Dev Academy curriculum I watched a video on YouTube about solving FizzBuzz.
+            </p>
+            <p>
+              Throughout the process it felt good to have set console output objectives.
+            </p>
+            <p>
+              I learnt that there are many ways to solve the same problem. Some ways are done in less lines of code, but are also less modular and less human readable.
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="column box-default box-shader-3">
+            <h3 class="center-text">Using Problem Solving Techniques</h3>
+            <p class="bold-text">Confidence Levels (Out of 10)</p>
+            <ul>
+              <li>Pseudocode: 9/10</li>
+              <li>Trying something: 7/10</li>
+              <li>Rubber ducky method: 10/10</li>
+              <li>Reading error messages: 8/10</li>
+              <li>Console.logging: 10/10</li>
+              <li>Googling: 9/10</li>
+              <li>Asking your peers for help: 6/10</li>
+              <li>Asking coaches for help: 4/10</li>
+              <li>Improving your process with reflection: 8/10</li>
+            </ul>
+          </div>
+          <div class="column box-default">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer section -->
+    <footer id="main-footer" class="footers">
+      <p>Hamish Mourie | 2022</p>
+    </footer>
+
+  </body>
+
+</html>
